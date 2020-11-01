@@ -1,0 +1,233 @@
+.mainmenu-area ul.navbar-nav li a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.mainmenu-area {
+    background: none repeat scroll 0 0 #fbfbfb;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 999;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.logo a {
+    float: left;
+    font-size: 40px;
+    color: rgb(201, 201, 245);
+    font-family: 'Times New Roman';
+}
+
+.shopping-item {
+    float: right;
+}
+
+.nav a {
+    color: black;
+    margin: 5px;
+}
+
+.active {
+    background: rgb(201, 201, 245);
+}
+
+.product-big-title-area {
+    background-image: url("../images/nen2.png");
+    height: 170px;
+}
+
+.product-bit-title h2 {
+    font-family: raleway;
+    font-size: 80px;
+    font-weight: 200;
+    margin: 0;
+    padding: 50px 0;
+    color: rgb(201, 201, 245);
+}
+
+
+/* */
+
+.single-product-area {
+    padding: 30px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    width: 33.33333333%;
+    float: left;
+    padding: 3px;
+}
+
+.tablecart {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+table.tablecart th {
+    background: lightgray;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+}
+
+.cart-item td {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item p {
+    font-size: 20px;
+}
+
+.cart-item input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.cart-item input[type=submit] {
+    background-color: rgb(201, 201, 245);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.woocommerce h4 {
+    text-align: center;
+    font-weight: bold;
+    background: lightgray;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+}
+
+.w1 input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    resize: vertical;
+    padding: 3px;
+}
+
+.w1 select {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.w1 textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    resize: vertical;
+    padding: 3px;
+}
+
+.w1 input[type=submit] {
+    background-color: rgb(201, 201, 245);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    padding: 13px;
+}
+
+
+/* */
+
+.wrapperr {
+    margin-top: 20px;
+    padding: 0 45px;
+    background-color: rgb(201, 201, 245);
+}
+
+.roww:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnn {
+    float: left;
+    width: 21%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.columnm {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.columnn h4 {
+    text-align: center;
+}
+
+.ftbox {
+    padding-top: 30px;
+}
+
+.ftbox h4 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.social a {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.roww a {
+    color: black;
+}
+
+.ftsearch input[type=submit] {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.ftsearch input[type=submit]:hover {
+    background-color: black;
+}

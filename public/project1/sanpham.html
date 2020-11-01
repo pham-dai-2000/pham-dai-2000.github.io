@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sản Phẩm </title>
+    <link rel="stylesheet" type="text/css" href="css/trangchu.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function(){
+        var stt=0;
+        starImg= $("img.slide:first").attr("stt");
+        endImg= $("img.slide:last").attr("stt");
+        $(".slide img").each(function(){
+            if ($ (this).is(':visible')) {
+                stt=$(this).attr("stt");
+            }
+        });
+        $("#next").click(function(){
+            if(stt==endImg){
+                stt=-1; //vì nếu bằng 0 thì next tăng 1 đơn vị nó sẽ không trở về ảnh đâu tiên, nên nó phải bằng -1 
+            }
+            next=++stt;
+            $("img.slide").hide();
+            $("img.slide").eq(next).show();
+        });
+        $("#prev").click(function(){
+            if(stt==starImg){
+                stt=5;
+            }
+            prev=--stt;
+            $("img.slide").hide();
+            $("img.slide").eq(prev).show();
+        });
+        setInterval(function(){
+            $("#next").click();
+        },4000);
+    });
+    </script>
+</head>
+
+<body>
+    <!--***********************Phần Mở Đầu**************************-->
+    <div class="saleoff">
+        <marquee> Giảm 10% cho tất cả các giống chó Alaska đến hết ngày 23/06/2020</marquee>
+    </div>
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Tìm kiếm">
+                </div>
+                <div class="col">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">PETSHOP</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shopping-item">
+                        <a href="Dangnhap.html">Đăng nhập</a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i> <span class="product-count">2</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Trang chủ.html">Cửa hàng</a></li>
+                        <li><a href="giohang.html">Sản phẩm</a>
+                            <ul class="menu_item">
+                                <li><a href="#">Chó</a></li>
+                                <li><a href="#">Mèo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tài khoản</a>
+                            <ul class="menu_item">
+                                <li><a href="Dangnhap.html">Đăng nhập</a></li>
+                                <li><a href="#">Đăng kí</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="giohang.html">Giỏ hàng</a></li>
+                        <li><a href="giohang.html">Đặt hàng</a></li>
+                        <li><a href="giohang.html">Vận chuyển</a></li>
+                        <li><a href="Chinhsach.html">Chính sách đổi trả</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                        <li><a href="thongtincuahang.html">Thông tin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="content">
+        <div class="sp1">
+            <div class="col-md-4">
+                <div class="home1">
+                        <img class="slide"src="images/dog.jpg" stt="1" width="400" height="600">
+                        <img class="slide" src="images/dog4.jpg"  stt="2" style="display: none"width="400" height="600" >
+                        <img class="slide" src="images/dog5.jpg"  stt="3" style="display: none"width="400" height="600" >
+                        <a href="#home1" id="prev"><img src="images/trai.png" width="30px" height="30px"></a>
+			            <a href="#home1" id="next"><img src="images/phai.png" width="30px" height="30px"></a><br>
+                        <a class="item">
+                            <h3>ALASKA XÁM KHÁU KHỈNH CUTE</h3>
+                            <h5>Giá tiền: 8,000,000VND</h5>
+                            <a href="#">Mua hàng</a>
+                            <p> </p><a href="#">Thông tin sản phẩm</a>
+                        </a>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="home2">
+                    <a href=""> <img src="images/beage.jpg" width="400" height="600"></a>
+
+                    <a class="item">
+                        <h3>BEAGLE – CHÓ SĂN THỎ</h3>
+                        <h5>Giá tiền: 9.500.000VND</h5>
+                        <a href="#">Mua hàng</a>
+                        <p> </p><a href="#">Thông tin sản phẩm</a>
+                    </a>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="home3">
+                        <img src="images/cat.jpg"  width="400" height="600">
+                
+                    <a class="item">
+                        <h3>MÈO CỤP TAI XINH XINH</h3>
+                        <h5>Giá tiền: 14.000.000VND</h5>
+                        <a href="#">Mua hàng</a>
+                        <p> </p><a href="#">Thông tin sản phẩm</a>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home4">
+                    <a href="#"><img src="images/meo2.jpg" width="400" height="600"></a><br>
+                    <a class="item">
+                        <h3>MÈO SCOTTISH SILVER</h3>
+                        <h5>Giá tiền: 20.000.000VND</h5>
+                        <a href="#">Mua hàng</a>
+                        <p> </p><a href="#">Thông tin sản phẩm</a>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home3">
+                    <a href="#"><img src="images/cho_alasha_1.jpg" width="400" height="600"></a><br>
+                    <a class="item">
+                        <h3>ALASKA TRẮNG NÂU</h3>
+                        <h5>Giá tiền: 18.000.000VND</h5>
+                        <a href="#">Mua hàng</a>
+                        <p> </p><a href="#">Thông tin sản phẩm</a>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home4">
+                    <a href="#"><img src="images/meo_channgan_1.PNG" width="400" height="600"></a><br>
+                    <a class="item">
+                        <h3>MÈO CHÂN NGẮN-TAI CỤP</h3>
+                        <h5>Giá tiền: 18.000.000VND</h5>
+                        <a href="#">Mua hàng</a>
+                        <p> </p><a href="#">Thông tin sản phẩm</a>
+                    </a>
+                    </a>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="sp2">
+            <p>
+                <a href="#"><img src="images/footer.png" width="100%" height="300"></a>
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <div class="kt">
+        <hr size="6" width="100%" align="left" color="green">
+        <p> Cửa hàng chuyên cung cấp các loại thú cưng giá từ thấp đến cao</p>
+        <p>Sự lựa chọn tốt nhất để mọi người chọn được thú cưng đáng yêu nhất của mình?</p>
+
+    </div>
+    <div class="footer">
+        <div class="wrapperr">
+            <div class="roww">
+                <div class="columnn">
+                    <h4>Giúp đỡ</h4>
+                    <ul class="cthelp">
+                        <a href="" target="_blank">Liên hệ</a><br>
+                        <a href="#">Đang chuyển hàng</a><br>
+                        <a href="Trang chủ.html">Trở lại</a><br>
+                        <a href="#">DIY</a>
+                    </ul>
+                </div>
+                <div class="columnn">
+                    <h4>Tài khoản</h4>
+                    <ul class="ctacc">
+                        <a href="Dangnhap.html">Đăng nhập/Đăng kí</a><br>
+                        <a href="#">Tình trạng đặt hàng</a><br>
+                        <a href="#">Bán sỉ</a><br>
+                        <a href="#">Thẻ quà tặng điện tử</a>
+                    </ul>
+                </div>
+                <div class="columnn">
+                    <h4>Công ty</h4>
+                    <ul class="ctcom">
+                        <a href="#" target="_blank">Liên hệ với chúng tôi</a><br>
+                        <a href="https://www.facebook.com/dhai147">Đặng Văn Hải</a><br>
+                        <a href="https://www.facebook.com/pqdai.IT.er"></a>Phạm Quảng Đại<br>
+                        <a>0911307049</a>
+                    </ul>
+                </div>
+                <div class="cloumnm">
+                    <ul class="ftbox">
+                        <h4>Tham gia + Giảm 15% cho đơn hàng tiếp theo của bạn!</h4>
+                        <div class="ftsearch">
+                            <form action="aboutus_submit" method="get" accept-charset="utf-8">
+                                <input type="text" placeholder="Nhập email">
+                                <input type="submit" value="Gửi">
+                            </form>
+                        </div>
+                        <div class="social">
+                            <a href="#instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#youtube"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

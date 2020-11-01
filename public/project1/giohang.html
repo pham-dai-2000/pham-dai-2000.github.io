@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" type="text/css" href="css/giohang.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="logo">
+                        <h1><a href="#">PETSHOP</a></h1>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="shopping-item">
+                        <a href="checkout.html">Giỏ hàng - <span class="cart-amunt">32.000.000VND</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">2</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Trang chủ.html">CỬA HÀNG</a></li>
+                        <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                        <li><a href="#">TÀI KHOẢN</a></li>
+                        <li class="active"><a href="giohang.html">GIỎ HÀNG</a></li>
+                        <li><a href="#">ĐẶT HÀNG</a></li>
+                        <li><a href="giohang.html">VẬN CHUYỂN</a></li>
+                        <li><a href="Chinhsach.html">CHÍNH SÁCH ĐỔI TRẢ</a></li>
+                        <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                        <li><a href="thongtincuahang.html">THÔNG TIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-product-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="product">
+                        <div class="woocommerce">
+                            <h4>Thông tin sản phẩm</h4>
+                            <form action="#" method="post" accept-charset="utf-8">
+                                <table cellspacing="0" class="tablecart">
+                                    <thead>
+                                        <tr>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart-item">
+                                            <td><img src="IMAGES/dog.jpg" width="120" height="120" alt=""></td>
+                                            <td><b>Alaska xám kháu khỉnh cute</b></td>
+                                            <td>18.000.000VND</td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><img src="IMAGES/cat.jpg" width="120" height="120" alt=""></td>
+                                            <td><b>Mèo tai cụp xinh xinh</b></td>
+                                            <td>14.000.000VND</td>
+                                        </tr>
+                                        <tr class="cart-item">
+
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><label for="coupon">Mã giảm giá:</label> </td>
+                                            <td><input type="text" name="coupon" placeholder="ex:dai.dzai"></td>
+                                            <td><input type="submit" value="Áp dụng"></td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td>
+                                                <p>Tổng tiền:</p>
+                                            </td>
+                                            <td></td>
+                                            <td>32.000.000VND</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            <div class="w1">
+                                <h4> Thông tin đặt hàng</h4>
+                                <form action="/action_page.php">
+                                    <label for="name">Họ và tên:</label>
+                                    <input type="text" id="name" name="name" placeholder="ex: Pham Quang Dai">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="text" id="phone" name="phone" placeholder="ex: 0326033029">
+                                    <label for="email">Email:</label>
+                                    <input type="text" id="email" name="email" placeholder="pqdai269@gmai.com">
+                                    <label for="topic">Thanh toán:</label>
+                                    <select id="topic" name="topic">
+		          				<option value="card">Card/Visa</option>
+		          				<option value="cod">COD</option>
+		        				</select>
+                                    <label for="note">Ghi chú:</label>
+                                    <textarea id="note" name="note" placeholder="Gửi lời nhắn đến PetShop hoặc người nhận" style="height:40px"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            <div class="w1">
+                                <h4> Thông tin nhận hàng</h4>
+                                <form action="/action_page.php">
+                                    <label for="name">Họ và tên:</label>
+                                    <input type="text" id="name" name="name" placeholder="ex: Pham Quang Dai">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="text" id="phone" name="phone" placeholder="ex: 0326033029">
+                                    <label for="email">Địa chỉ:</label>
+                                    <input type="text" id="address" name="address" placeholder="165 Xuan Thuy Str., Cau Giay Dist., Ha Noi city">
+                                    <label for="topic">Thời gian nhận hàng:</label>
+                                    <select id="topic" name="topic">
+		          				<option value="a">Giờ hành chính</option>
+		          				<option value="b">Tối(nội thành HN)</option>
+		        				</select>
+                                    <input type="submit" value="Xác nhận đặt hàng">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapperr">
+            <div class="roww">
+                <div class="columnn">
+                    <h4>Giúp đỡ</h4>
+                    <ul class="cthelp">
+                        <a href="..\web\contact.html" target="_blank">Liên hệ</a><br>
+                        <a href="#">Đang chuyển hàng</a><br>
+                        <a href="#">Trở lại</a><br>
+                        <a href="#">DIY</a>
+                    </ul>
+                </div>
+                <div class="columnn">
+                    <h4>Tài khoản</h4>
+                    <ul class="ctacc">
+                        <a href="#">Đăng nhập/Đăng kí</a><br>
+                        <a href="#">Tình trạng đặt hàng</a><br>
+                        <a href="#">Bán sỉ</a><br>
+                        <a href="#">Thẻ quà tặng điện tử</a>
+                    </ul>
+                </div>
+                <div class="columnn">
+                    <h4>Công ty</h4>
+                    <ul class="ctcom">
+                        <a href="..\web\aboutus.html" target="_blank">Liên hệ với chúng tôi</a><br>
+                        <a href="https://www.facebook.com/dhai147">Đặng Văn Hải</a><br>
+                        <a href="https://www.facebook.com/pqdai.IT.er">Phạm Quảng Đại</a><br>
+                        <a href="#">0911307049</a>
+                    </ul>
+                </div>
+                <div class="cloumnm">
+                    <ul class="ftbox">
+                        <h4>Tham gia + Giảm 15% cho đơn hàng tiếp theo của bạn!</h4>
+                        <div class="ftsearch">
+                            <form action="aboutus_submit" method="get" accept-charset="utf-8">
+                                <input type="text" placeholder="Nhập email">
+                                <input type="submit" value="Gửi">
+                            </form>
+                        </div>
+                        <div class="social">
+                            <a href="#instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#youtube"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

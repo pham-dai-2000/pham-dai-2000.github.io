@@ -1,0 +1,200 @@
+.mainmenu-area ul.navbar-nav li a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+p b {}
+
+.colm p {
+    margin-left: 50px;
+}
+
+.mainmenu-area {
+    background: none repeat scroll 0 0 #fbfbfb;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 999;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    width: 33.3333%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.logo a {
+    color: rgb(201, 201, 245);
+}
+
+.logo h1 {
+    text-align: center;
+    font-family: time newroman;
+}
+
+.shopping-item {
+    float: right;
+}
+
+.nav a {
+    color: black;
+    margin: 5px;
+}
+
+.active {
+    background: rgb(201, 201, 245);
+}
+
+.saleoff {
+    display: block;
+    background-color: rgb(201, 201, 245);
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-big-title-area {
+    height: 80px;
+}
+
+.product-bit-title h2 {
+    font-family: raleway;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 0;
+    color: rgb(201, 201, 245);
+}
+
+
+/* */
+
+.maincontent {
+    padding: 0 35px;
+    margin-top: 20px;
+}
+
+.containerr {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.abus {
+    text-align: center;
+}
+
+.abus h2 {
+    font-weight: bold;
+}
+
+.roow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.colm {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.mis {
+    text-align: center;
+}
+
+.mis h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.ctm {
+    margin-top: 20px;
+}
+
+
+/* */
+
+.wrapperr {
+    margin-top: 20px;
+    padding: 0 45px;
+    background-color: rgb(201, 201, 245);
+}
+
+.roww:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnn {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.columnm {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.columnn h4 {
+    text-align: center;
+}
+
+.ftbox {
+    padding-top: 30px;
+}
+
+.ftbox h4 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.social a {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.roww a {
+    color: black;
+}
+
+.ftsearch input[type=submit] {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.ftsearch input[type=submit]:hover {
+    background-color: black;
+}
